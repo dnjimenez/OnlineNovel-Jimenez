@@ -1,0 +1,19 @@
+.endcard {
+    padding-top: 4%;
+    text-align: center;
+    clear: left;
+    color: crimson;
+    grid-area: footer;
+    align-self: flex-end;
+}
+
+// .endcard__link:hover {
+//     animation-name: fadein;
+//     animation-duration: 1s;
+// }
+.endcard>a:hover {
+    color: $menu-animation-color;
+    text-decoration: none;
+    animation-name: redorangefade;
+    animation-duration: 1s;
+}

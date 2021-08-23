@@ -1,0 +1,52 @@
+#infoJulius {
+    grid-area: infoJulius;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    grid-template-areas: ". juliusImage juliusImage juliusImage juliusText juliusText juliusText .";
+}
+
+#juliusImage {
+    grid-area: juliusImage;
+}
+
+#juliusText {
+    grid-area: juliusText;
+}
+
+#infoLaplace {
+    grid-area: infoLaplace;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". laplaceImage laplaceImage laplaceImage laplaceText laplaceText laplaceText .";
+}
+
+#laplaceImage {
+    grid-area: laplaceImage;
+}
+
+#laplaceText {
+    grid-area: laplaceText;
+}
+
+.characterInfoTable {
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.container-general {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerInfo {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: auto minmax(5rem, 10rem);
+    padding-top: 6rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    grid-template-areas: ". conceptImage conceptText .";
+    justify-items: center;
+}

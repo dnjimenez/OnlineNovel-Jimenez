@@ -1,0 +1,59 @@
+html {
+    font-size: $fontSizeHtml;
+}
+
+body {
+    background-image: url("../img/papyrus-dark.png");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+header {
+    background-image: url("../img/black-forest-image.jpg");
+    grid-area: header;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: $fontSizeGiant;
+    text-transform: uppercase;
+    color: $clear-color;
+    text-align: center;
+}
+
+section article {
+    color: $info-color;
+}
+
+.titulo {
+    font-size: $fontSizeBig;
+    color: $clear-color;
+    text-align: center;
+}
+
+.texto {
+    padding-top: 6rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    line-height: 150%;
+    color: $text-color;
+    text-align: center;
+}
+
+.conceptImage {
+    grid-area: conceptImage;
+    height: auto;
+    margin-right: 10%;
+    color: $clear-color;
+}
+
+.conceptText {
+    grid-area: conceptText;
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+}

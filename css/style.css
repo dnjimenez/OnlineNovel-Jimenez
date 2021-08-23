@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&display=swap");
+* {
+  margin: 0;
+  padding: 1;
+  font-family: "Bodoni Moda", serif;
+  font-size: 2rem; }
+
+/* menu */
+.menu-style, nav, .navbar, .navbar-nav > li > a, .navbar-nav > li > .dropdown-menu, .navbar-nav > li > .dropdown-menu > li > a {
+  background-color: #474747;
+  color: red; }
+
+.animated-menu-style, .navbar-nav > li > .dropdown-menu > li > a:hover {
+  background-color: #474747;
+  color: orangered; }
+
+nav {
+  text-align: center; }
+
+/* bootstrap custom */
+.navbar-nav > li > a:hover {
+  animation-name: redorangefade;
+  animation-duration: 1s;
+  color: orangered; }
+
+.navbar-nav > li > .dropdown-menu > li > a:hover {
+  animation-name: redorangefade;
+  animation-duration: 1s; }
+
+.custom-toggler.navbar-toggler {
+  border-color: red; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+html {
+  font-size: 100%; }
+
+body {
+  background-image: url("../img/papyrus-dark.png");
+  background-repeat: repeat;
+  background-position: center; }
+
+header {
+  background-image: url("../img/black-forest-image.jpg");
+  grid-area: header; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center; }
+
+section article {
+  color: darkslategray; }
+
+.titulo {
+  font-size: 6rem;
+  color: white;
+  text-align: center; }
+
+.texto {
+  padding-top: 6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  line-height: 150%;
+  color: orangered;
+  text-align: center; }
+
+.conceptImage {
+  grid-area: conceptImage;
+  height: auto;
+  margin-right: 10%;
+  color: white; }
+
+.conceptText {
+  grid-area: conceptText;
+  width: auto;
+  height: auto;
+  margin-left: 10%; }
+
+#infoJulius {
+  grid-area: infoJulius;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  grid-template-areas: ". juliusImage juliusImage juliusImage juliusText juliusText juliusText ."; }
+
+#juliusImage {
+  grid-area: juliusImage; }
+
+#juliusText {
+  grid-area: juliusText; }
+
+#infoLaplace {
+  grid-area: infoLaplace;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". laplaceImage laplaceImage laplaceImage laplaceText laplaceText laplaceText ."; }
+
+#laplaceImage {
+  grid-area: laplaceImage; }
+
+#laplaceText {
+  grid-area: laplaceText; }
+
+.characterInfoTable {
+  text-align: center;
+  border: 1px solid grey; }
+
+.container-general {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column; }
+
+.containerInfo {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: auto minmax(5rem, 10rem);
+  padding-top: 6rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  grid-template-areas: ". conceptImage conceptText .";
+  justify-items: center; }
+
+.primerCapituloButton {
+  margin-top: 10rem; }
+
+.texto__capituloButton {
+  float: right;
+  margin-right: 16%;
+  color: white;
+  bottom: 0;
+  right: 0; }
+
+.animatedButton:hover {
+  transform: scale(1.1, 1.2);
+  cursor: pointer;
+  animation-name: fadein;
+  animation-duration: 1s;
+  color: black;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, red, orange); }
+
+.endcard {
+  padding-top: 4%;
+  text-align: center;
+  clear: left;
+  color: crimson;
+  grid-area: footer;
+  align-self: flex-end; }
+
+.endcard > a:hover {
+  color: orangered;
+  text-decoration: none;
+  animation-name: redorangefade;
+  animation-duration: 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes redorangefade {
+  from {
+    color: red; }
+  to {
+    color: orangered; } }

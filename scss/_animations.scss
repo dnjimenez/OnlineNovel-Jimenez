@@ -1,0 +1,17 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes redorangefade {
+    from {
+        color: red;
+    }
+    to {
+        color: orangered;
+    }
+}

@@ -1,0 +1,57 @@
+//variables
+
+/* menu */
+
+.menu-style {
+    background-color: $bg-dark;
+    color: $menu-color;
+}
+
+.animated-menu-style {
+    background-color: $bg-dark;
+    color: $menu-animation-color;
+}
+
+nav {
+    @extend .menu-style;
+    text-align: center;
+}
+
+
+/* bootstrap custom */
+
+.navbar {
+    @extend .menu-style;
+}
+
+.navbar-nav>li>a {
+    @extend .menu-style;
+}
+
+.navbar-nav>li>a:hover {
+    animation-name: redorangefade;
+    animation-duration: 1s;
+    color: $menu-animation-color;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    @extend .menu-style;
+}
+
+.navbar-nav>li>.dropdown-menu>li>a {
+    @extend .menu-style;
+}
+
+.navbar-nav>li>.dropdown-menu>li>a:hover {
+    @extend .animated-menu-style;
+    animation-name: redorangefade;
+    animation-duration: 1s;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: $menu-color;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

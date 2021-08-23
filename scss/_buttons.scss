@@ -1,0 +1,21 @@
+.primerCapituloButton {
+    margin-top: 10rem;
+}
+
+.texto__capituloButton {
+    float: right;
+    margin-right: 16%;
+    color: white;
+    bottom: 0;
+    right: 0;
+}
+
+.animatedButton:hover {
+    transform: scale(1.1, 1.2);
+    cursor: pointer;
+    animation-name: fadein;
+    animation-duration: 1s;
+    color: black;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, red, orange);
+}
