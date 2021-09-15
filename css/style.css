@@ -146,6 +146,12 @@ section article {
   border-radius: 10px;
   background-image: linear-gradient(to bottom, red, orange); }
 
+.formButton {
+  transform: scale(1.1, 1.2);
+  color: black;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, red, orange); }
+
 .endcard {
   padding-top: 4%;
   text-align: center;
